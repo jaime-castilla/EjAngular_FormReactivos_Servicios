@@ -1,0 +1,12 @@
+<h1>Ejercicio Prueba FormReactivo</h1>
+<form [formGroup]="formularioPrueba" (ngSubmit)="onSubmit()">
+    <p>
+        <label for="numPedido">Introduce el número de pedido:  </label>
+        <input type="text" formControlName="numeroPedido">
+    </p>
+    <p>
+        <label for="cliente">Introduce el nombre del cliente:  </label>
+        <input type="text" formControlName="cliente">
+    </p>
+    <button type="submit">Enviar</button>
+</form>

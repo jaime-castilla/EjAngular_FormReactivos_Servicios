@@ -1,0 +1,29 @@
+<h1>Ejercicio 1 FormReactivos</h1>
+<form [formGroup]="viviendas" (ngSubmit)="onSubmit()">
+    <p>
+        <label for="ref">Referencia:  </label>
+        <input type="text" formControlName="referencia"/>
+    </p>
+    <p>
+        <label for="ref">Dirección:  </label>
+        <input type="text" formControlName="direccion"/>
+    </p>
+    <p>
+        <label for="ref">Descripción:  </label>
+        <input type="text" formControlName="descripcion"/>
+    </p>
+    <p>
+        <label for="ref">Imágen:  </label>
+        <input type="text" formControlName="urlImagen"/>
+    </p>
+    <p>
+        <label for="ref">Número de habitaciones:  </label>
+        <input type="number" formControlName="numHabitaciones"/>
+    </p>
+    <p>
+        <label for="ref">Número de baños:  </label>
+        <input type="number" formControlName="numBanios"/>
+    </p>
+    <button type="submit">Enviar</button>
+</form>
+
